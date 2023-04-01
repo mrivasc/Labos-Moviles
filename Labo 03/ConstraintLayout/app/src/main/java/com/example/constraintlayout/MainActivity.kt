@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import java.text.DecimalFormat
 import kotlin.math.roundToInt
 
 class MainActivity : AppCompatActivity() {
