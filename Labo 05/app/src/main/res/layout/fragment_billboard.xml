@@ -147,6 +147,7 @@
         android:layout_margin="16dp"
         android:contentDescription="addNewMovie"
         android:backgroundTint="@color/buttonColor"
+        app:borderWidth="0dp"
         app:srcCompat="@drawable/ic_plus_24"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
