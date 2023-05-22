@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.laboratorio09.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_mainThreadFragment"
+            app:destination="@id/mainThreadFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_coroutinesFragment"
+            app:destination="@id/coroutinesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainThreadFragment"
+        android:name="com.example.laboratorio09.MainThreadFragment"
+        android:label="MainThreadFragment"
+        tools:layout="@layout/fragment_main_thread" />
+    <fragment
+        android:id="@+id/coroutinesFragment"
+        android:name="com.example.laboratorio09.CoroutinesFragment"
+        android:label="CoroutinesFragment"
+        tools:layout="@layout/fragment_coroutines" />
+</navigation>
